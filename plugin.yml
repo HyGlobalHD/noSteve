@@ -1,5 +1,6 @@
 name: NoSteve
-main: LostTeam\NoSteve\Main
-author: LostTeam
+main: LostTeam\NoSteve
+author: "LostTeam"
 version: 1.0.0
 api: [1.13.1, 2.0.0]
+description: "Prevent players named Steve from playing on your server."
