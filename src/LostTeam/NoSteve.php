@@ -1,5 +1,5 @@
 <?php
-namespace LostTeam\NoSteve;
+namespace LostTeam;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Event;
