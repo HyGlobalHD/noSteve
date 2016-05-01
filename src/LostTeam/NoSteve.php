@@ -9,7 +9,7 @@ use pocketmine\utils\TextFormat as Color;
 use pocketmine\Player;
 use pocketmine\event\player\PlayerPreLoginEvent;
 
-class Main extends PluginBase implements Listener {
+class NoSteve extends PluginBase implements Listener {
 
   public function onEnable() {
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
