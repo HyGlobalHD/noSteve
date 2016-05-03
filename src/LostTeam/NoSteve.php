@@ -10,8 +10,9 @@ use pocketmine\Player;
 use pocketmine\event\player\PlayerPreLoginEvent;
 
 class NoSteve extends PluginBase implements Listener {
-
+  public $Cfg;
   public function onEnable() {
+    $this->getCfg();
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
     $this->getLogger()->notice(Color::GREEN."Enabled!");
   }
@@ -21,6 +22,10 @@ class NoSteve extends PluginBase implements Listener {
       $player->kick(Color::RED . "Please change your username. Don't use Steve.",false);
       $event->setCancelled();
     }
+  }
+  public function getCfg() {
+    $this->saveDefaultConfig();
+    $this->Cfg = $this->getConfig();
   }
   public function onDisable() {
     $this->getLogger()->notice(Color::GREEN."Disabled!");
